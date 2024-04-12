@@ -3,8 +3,6 @@ import { expect, $ } from '@wdio/globals';
 
 import loginPage from '../pageobjects/login.page.js';
 
-
-
 Given(/^I am in the login page$/, async () => {
     await browser.url(loginPage.findURL);
 });

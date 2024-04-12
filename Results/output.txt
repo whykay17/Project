@@ -1,0 +1,21 @@
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 123.0.6312.123 windows #0-0] Running: chrome (v123.0.6312.123) on windows
+[chrome 123.0.6312.123 windows #0-0] Session ID: 9e4cffb1ea3eeb17a39a7d05c30693f7
+[chrome 123.0.6312.123 windows #0-0]
+[chrome 123.0.6312.123 windows #0-0] » \features\login.feature
+[chrome 123.0.6312.123 windows #0-0] The Practice test automation Website
+[chrome 123.0.6312.123 windows #0-0] As a student, I can log in to webpage
+[chrome 123.0.6312.123 windows #0-0]    ✓ Given I am in the login page
+[chrome 123.0.6312.123 windows #0-0]    ✓ When I enter my username and password
+[chrome 123.0.6312.123 windows #0-0]    ✓ And I click on Submit button
+[chrome 123.0.6312.123 windows #0-0]    ✓ Then I am logged in successfully
+[chrome 123.0.6312.123 windows #0-0]
+[chrome 123.0.6312.123 windows #0-0] 4 passing (8.1s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:15
+
+2024-04-12T15:48:27.543Z INFO @wdio/local-runner: Shutting down spawned worker
+2024-04-12T15:48:27.807Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2024-04-12T15:48:27.809Z INFO @wdio/local-runner: shutting down

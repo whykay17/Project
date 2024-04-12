@@ -6,5 +6,3 @@ Feature: The Practice test automation Website
         When I enter my username and password
         And I click on Submit button
         Then I am logged in successfully
-
-
