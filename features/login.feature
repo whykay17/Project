@@ -5,5 +5,6 @@ Feature: The Practice test automation Website
         Given I am in the login page
         When I enter my username and password
         And I click on Submit button
-        Then new page URL contains Congratulations
+        Then I am logged in successfully
+
 
