@@ -10,12 +10,11 @@ Given(/^I am in the login page$/, async () => {
 });
 
 When(/^I enter my username and password$/, async () => {
-    await browser.pause(2000);
     await loginPage.enterCred("student", "Password123");
 });
 
 When(/^I click on Submit button$/, async () => {
-    await browser.pause(6000);
+    await browser.pause(1000);
     await loginPage.pressSub();
 });
 
