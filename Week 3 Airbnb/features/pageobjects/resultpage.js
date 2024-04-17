@@ -3,12 +3,21 @@ class results{
         return 'Airbnb | Europe – Holiday Rentals & Places to Stay';
     }
 
-    get topStay() {
-        return $('//*[@id="site-content"]/div/div[2]/div/div/div/div/div[1]/div[1]/div/div[2]/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div/a[1]');
+    get farmStay() {
+        return $("//div[contains(text(),'Farm stay')]/ancestor::div[3]");
+    }
+
+    get nextPage() {
+        return $("//a[@aria-label='Next']")
     }
 
     topSel=async() => {
-        await this.topStay.click();
+        while(!(await this.farmStay.isDisplayed()))
+        {   await browser.pause(1000);
+            (await this.nextPage).click();
+        }
+        await this.farmStay.click();
+        await browser.pause(1000);
     }
 }
 

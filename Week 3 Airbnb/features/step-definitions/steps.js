@@ -8,18 +8,13 @@ const bookPage = require('../pageobjects/bookpage.js');
 
 Given(/^I am in homepage$/, async() => {
 	await browser.url(homePage.findURL);
+    await browser.maximizeWindow();
     await browser.pause(5000);
 });
 
-When(/^I select drop down and select europe$/, async() => {
+When(/^I select drop down and select details$/, async() => {
     await homePage.eurSel();
-});
-
-When(/^I select dates for travel$/, async() => {
     await homePage.dateSel();
-});
-
-When(/^I add one adult visiting$/, async() => {
     await homePage.guestSel();
     browser.pause(5000);
 });
@@ -32,11 +27,12 @@ Then(/^I get redirected to results page$/, async() => {
 	await expect(browser).toHaveTitle(resPage.resTitle);
 });
 
-When(/^I click on top stay option$/, async() => {
+When(/^I click on top preferred stay option$/, async() => {
 	await resPage.topSel();
+    
 });
 
-Then(/^I get name of top stay page$/, async() => {
+Then(/^I get redirected to top stay page$/, async() => {
     
     await stayPage.tabSwitch();
     await stayPage.transCheck();

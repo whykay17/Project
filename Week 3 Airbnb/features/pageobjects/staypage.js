@@ -12,7 +12,7 @@ class stay {
     }
 
     get transClose(){
-        return $("/html/body/div[9]/div/div/section/div/div/div[2]/div/div[1]/button")
+        return $("//button[@aria-label='Close']")
     }
 
     stayName = async() => {
@@ -37,9 +37,9 @@ class stay {
     }
 
     transCheck = async() => {
-        if((this.transClose).isExisting())
+        if(await (this.transClose).isExisting())
         {
-            await this.transClose.click();
+            this.transClose.click();
         }
     }
 

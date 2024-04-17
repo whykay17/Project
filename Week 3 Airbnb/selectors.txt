@@ -42,3 +42,14 @@ Reserve button
 
 Your trip text
 //h2[normalize-space()='Your trip']
+
+
+
+  Scenario Outline: As a user, I do not find required stay
+
+  Given I am in homepage
+  When I select drop down and select details
+  And I click on search button
+  Then I get redirected to results page
+  When I traverse all remaining tabs
+  Then I do not get redirected to top stay page
