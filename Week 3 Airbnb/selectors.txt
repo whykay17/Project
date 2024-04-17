@@ -1,0 +1,44 @@
+Webpage
+https://www.airbnb.co.in/
+
+Where input
+//*[@id="bigsearch-query-location-input"]
+
+Europe button
+//div[contains(@class,'dttmvf5 atm_9s_11p5wf0 atm_n5_i2wt44 atm_d7_idpfg4 atm_ks_15vqwwr atm_dz_zk4kx0 atm_e0_988hr2 dir dir-ltr')]//div[2]//button[1]
+
+Checkin date
+//div[@class='_1bffgmnc notranslate']
+
+Checkout btn
+//div[@class='p1m42al0 atm_c8_km0zk7 atm_g3_18khvle atm_fr_1m9t47k atm_cs_6adqpa atm_ks_15vqwwr atm_sq_1l2sidv atm_vy_1osqo2v p1t4vwjw atm_7l_1jsbn00 dir dir-ltr']
+
+Checkout date
+//div[@class='_1aj90y58 notranslate'][normalize-space()='2']
+
+Guests
+//div[normalize-space()='Who']
+
+Adult plus
+//button[contains(@data-testid,'stepper-adults-increase-button')]//span[contains(@class,'i98ho2o atm_e2_qslrf5 atm_vy_qslrf5 atm_l8_14y27yu dir dir-ltr')]//*[name()='svg']
+
+Search
+//*[@id="search-tabpanel"]/div/div[5]/div[1]/div[3]/button/div/div[2]
+
+First result
+//*[@id="site-content"]/div/div[2]/div/div/div/div/div[1]/div[1]/div/div[2]/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div/a[1]
+
+Translate close button
+/html/body/div[9]/div/div/section/div/div/div[2]/div/div[1]/button
+
+Result name
+//*[@id="site-content"]/div/div[1]/div[3]/div/div[1]/div/div[1]/div/div/div/section/div[1]/h2
+
+Result Price
+//div[contains(@class,'_1k1ce2w')]//div//span[contains(@class,'_1y74zjx')]
+
+Reserve button
+//div[contains(@class,'_fz3zdn')]//button[contains(@type,'button')]
+
+Your trip text
+//h2[normalize-space()='Your trip']
