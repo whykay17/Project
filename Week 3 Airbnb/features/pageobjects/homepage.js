@@ -7,12 +7,13 @@ class home{
         return $('//*[@id="bigsearch-query-location-input"]');
     }
 
-    get eurButton() {
-        return $("//span[contains(text(),'Europe')]/parent::*");
+     eurButton=async(location) =>{
+        console.log(location);
+        return $(`//span[contains(text(),"${location}")]/parent::*`);
     }
 
     get checkin() {
-        return $("//div[@class='_nuyjria notranslate'][normalize-space()='30']");
+        return $("//td[@aria-disabled='false'][1]");
     }
 
     get checkout() {
@@ -31,9 +32,11 @@ class home{
         return $('button[data-testid="structured-search-input-search-button"]');
     }
 
-    eurSel=async() =>{
+    eurSel=async(location) =>{
         await this.locInput.click();
-        await this.eurButton.click();
+        let btn=await this.eurButton(location);
+        await btn.waitForClickable();
+        await btn.click();
     }
 
     dateSel=async() =>{

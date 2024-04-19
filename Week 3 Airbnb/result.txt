@@ -1,0 +1,45 @@
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 123.0.6312.124 windows #0-0] Running: chrome (v123.0.6312.124) on windows
+[chrome 123.0.6312.124 windows #0-0] Session ID: 869bef78f78a1e75175160793e16c20e
+[chrome 123.0.6312.124 windows #0-0]
+[chrome 123.0.6312.124 windows #0-0] » \features\login.feature
+[chrome 123.0.6312.124 windows #0-0] The Airbnb Website
+[chrome 123.0.6312.124 windows #0-0] As a user, I can find the required place to stay
+[chrome 123.0.6312.124 windows #0-0]    ✓ Given I am in homepage
+[chrome 123.0.6312.124 windows #0-0]    ✓ When I select drop down and select Europe
+[chrome 123.0.6312.124 windows #0-0]    ✓ And I click on search button
+[chrome 123.0.6312.124 windows #0-0]    ✓ Then I get redirected to results page and see Europe as title
+[chrome 123.0.6312.124 windows #0-0]    ✓ When I click on top Cabin of stay
+[chrome 123.0.6312.124 windows #0-0]    ✓ Then I get redirected to top stay page
+[chrome 123.0.6312.124 windows #0-0]    ✓ When I click on reserve button
+[chrome 123.0.6312.124 windows #0-0]    ✓ Then I get redirected to reservation page
+[chrome 123.0.6312.124 windows #0-0]
+[chrome 123.0.6312.124 windows #0-0] As a user, I can find the required place to stay
+[chrome 123.0.6312.124 windows #0-0]    ✓ Given I am in homepage
+[chrome 123.0.6312.124 windows #0-0]    ✓ When I select drop down and select Thailand
+[chrome 123.0.6312.124 windows #0-0]    ✓ And I click on search button
+[chrome 123.0.6312.124 windows #0-0]    ✓ Then I get redirected to results page and see Thailand as title
+[chrome 123.0.6312.124 windows #0-0]    ✓ When I click on top Flat of stay
+[chrome 123.0.6312.124 windows #0-0]    ✓ Then I get redirected to top stay page
+[chrome 123.0.6312.124 windows #0-0]    ✓ When I click on reserve button
+[chrome 123.0.6312.124 windows #0-0]    ✓ Then I get redirected to reservation page
+[chrome 123.0.6312.124 windows #0-0]
+[chrome 123.0.6312.124 windows #0-0] As a user, I can find the required place to stay
+[chrome 123.0.6312.124 windows #0-0]    ✓ Given I am in homepage
+[chrome 123.0.6312.124 windows #0-0]    ✓ When I select drop down and select United Kingdom
+[chrome 123.0.6312.124 windows #0-0]    ✓ And I click on search button
+[chrome 123.0.6312.124 windows #0-0]    ✓ Then I get redirected to results page and see United Kingdom as title
+[chrome 123.0.6312.124 windows #0-0]    ✓ When I click on top Home of stay
+[chrome 123.0.6312.124 windows #0-0]    ✓ Then I get redirected to top stay page
+[chrome 123.0.6312.124 windows #0-0]    ✓ When I click on reserve button
+[chrome 123.0.6312.124 windows #0-0]    ✓ Then I get redirected to reservation page
+[chrome 123.0.6312.124 windows #0-0]
+[chrome 123.0.6312.124 windows #0-0] 24 passing (1m 27s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:01:35
+
+2024-04-19T05:52:10.697Z INFO @wdio/local-runner: Shutting down spawned worker
+2024-04-19T05:52:10.956Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2024-04-19T05:52:10.956Z INFO @wdio/local-runner: shutting down

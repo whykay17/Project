@@ -11,6 +11,10 @@ class stay {
         return $("//div[contains(@class,'_fz3zdn')]//button[contains(@type,'button')]")
     }
 
+    get transText(){
+        return $("//h1[contains(text(),'Translation on')]");
+    }
+
     get transClose(){
         return $("//button[@aria-label='Close']")
     }
@@ -25,6 +29,7 @@ class stay {
     tabSwitch = async() => {
         const originalWindowHandle = await browser.getWindowHandle();
         const windowHandles = await browser.getWindowHandles();
+        windowHandles.reverse();
         let newWindowHandle;
         for (const handle of windowHandles) {
             if (handle !== originalWindowHandle) {
@@ -37,14 +42,21 @@ class stay {
     }
 
     transCheck = async() => {
-        if(await (this.transClose).isExisting())
+        await browser.pause(3000);
+        if(await (this.transClose).isExisting() || await (this.transText).isDisplayed())
         {
-            this.transClose.click();
+            if((this.transClose).isClickable())
+            {
+                await this.transClose.click();
+            }
         }
     }
 
     reserveClick = async() => {
-        await this.reserve.click();
+        
+        if((await this.reserve).isClickable()){
+            await this.reserve.click();
+        }
     }
 
 }
