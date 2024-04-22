@@ -27,7 +27,7 @@ Then(/^I get redirected to results page and see (.*) as title$/, async(location)
 	await resPage.titleCheck(location);
 });
 
-When(/^I click on top (.*) of stay$/, async(type) => {
+When(/^I click on top (.*) stay$/, async(type) => {
 	await resPage.topSel(type);
     
 });
@@ -35,7 +35,6 @@ When(/^I click on top (.*) of stay$/, async(type) => {
 Then(/^I get redirected to top stay page$/, async() => {
     
     await stayPage.tabSwitch();
-    
     await expect(browser).toHaveTitle(expect.stringContaining('- Airbnb'))
     
 });

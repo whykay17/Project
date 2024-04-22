@@ -1,11 +1,4 @@
 class stay {
-    get stayNameid(){
-        return $('//*[@id="site-content"]/div/div[1]/div[3]/div/div[1]/div/div[1]/div/div/div/section/div[1]/h2');
-    }
-
-    get priceID(){
-        return $("//div[contains(@class,'_1k1ce2w')]//div//span[contains(@class,'_1y74zjx')]");
-    }
 
     get reserve(){
         return $("//div[contains(@class,'_fz3zdn')]//button[contains(@type,'button')]")
@@ -17,13 +10,6 @@ class stay {
 
     get transClose(){
         return $("//button[@aria-label='Close']")
-    }
-
-    stayName = async() => {
-        var x = (await this.stayNameid).getText();
-        var y = (await this.priceID).getText
-        console.log(x);
-        console.log(y);
     }
 
     tabSwitch = async() => {
