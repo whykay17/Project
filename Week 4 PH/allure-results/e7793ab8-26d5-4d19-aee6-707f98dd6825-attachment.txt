@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//input[@name='expiration' and @data-braintree-name='expirationDate']"
+}

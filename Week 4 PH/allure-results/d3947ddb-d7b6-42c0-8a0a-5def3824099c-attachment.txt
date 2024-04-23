@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//input[@name='credit-card-number' and @data-braintree-name='number']"
+}

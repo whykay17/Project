@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//input[@name='cvv' and @data-braintree-name='cvv']"
+}

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//table[@class='catalog-table ng-star-inserted']/tr[2]/td[6]/button"
+}

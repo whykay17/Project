@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//label[@for='mat-checkbox-1-input']//span[@class='mat-checkbox-inner-container']"
+}

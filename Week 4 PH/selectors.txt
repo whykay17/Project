@@ -1,0 +1,64 @@
+Consultant name input
+//input[@id='signInName']
+
+Consultant password input
+//input[@id='password']
+
+Login button
+//button[@id='next']
+
+Greeting text
+//div[@class='greeting-text']
+
+Orders
+//a[@id='side-nav-orders']
+
+New order button
+//button[@id='add-new-order-button']
+
+Sample and supplies button
+//a[normalize-space()='Samples & Supplies Order']
+
+......
+
+Look up item
+//div[@class='container']//button[@class='mat-focus-indicator mat-button mat-button-base']
+
+add item
+//table[@class='catalog-table ng-star-inserted']/tr[2]/td[6]/button
+
+payments tab
+//button[@id='npo-payment-tab']
+
+add payment
+//button[@id='add-new-payment']
+
+select payment
+//a[normalize-space()='Credit or debit card']
+
+credit text
+//h1[normalize-space()='Add Credit or debit card payment']
+
+checkbox
+//input[@id='mat-checkbox-1-input']
+
+due amount
+//div[@class='value balance-value']
+
+pay amount
+//input[@id='mat-input-1']
+
+cardholder name
+//iframe[@id='braintree-hosted-field-cardholderName']
+
+Card number
+//iframe[@id='braintree-hosted-field-number']
+
+Exp date
+//iframe[@id='braintree-hosted-field-expirationDate']
+
+CVV
+//iframe[@id='braintree-hosted-field-cvv']
+
+Add payment button
+//button[@id='add-payment-modal-add']
